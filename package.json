@@ -1,27 +1,39 @@
 {
-  "name": "news-scraper",
+  "name": "newsscraper",
   "version": "1.0.0",
-  "description": "News Scraper is a web app that lets users view scraped news and leave comments.",
-  "main": "server.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "express-handlebars": "^3.0.0",
+    "hbs": "~4.0.1",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "description": "News Scraper is a web app that lets users view scraped news and leave comments.",
+  "main": "app.js",
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mehyar500/NewsScraper.git"
   },
-  "author": "",
+  "keywords": [
+    "Discover",
+    "new",
+    "app",
+    "ideas",
+    "wish",
+    "wishes"
+  ],
+  "author": "Mehyar Swelim",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mehyar500/NewsScraper/issues"
   },
-  "homepage": "https://github.com/mehyar500/NewsScraper#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.2",
-    "express-handlebars": "^3.0.0",
-    "mongoose": "^4.12.4",
-    "request": "^2.83.0"
-  }
+  "homepage": "https://github.com/mehyar500/NewsScraper#readme"
 }
